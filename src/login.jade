@@ -1,0 +1,28 @@
+extends _layout.jade
+
+block login
+  #content
+   .countainer
+     .loginTitle
+      h1 六角西餐廳
+      p 享受美食好味道
+      .login
+        p LOGIN
+        .loginInfo
+          ul 
+            li.infoTitle1 Email Adderss*
+              label(for="mail")
+            li 
+              input(type="email", name="" id="mail")
+            li.infoTitle2  Password*
+              label(for="pas")
+            li
+              input(type="password", name="" id="pas")
+        .forgot 忘記密碼？
+        .button
+             .cancel.clearfix
+               button(type="submit") 取消
+             .send
+               button(type="submit") 送出 
+
+       

@@ -1,0 +1,146 @@
+.countainer {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.block {
+    background-image: url(https://github.com/Jimmywei01/HexSchool_Western_Restaurant-RWD/blob/master/src/images/header_mobile.png?raw=true); // margin-top: 113px;
+    height: 364px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.blockTop {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between; 
+    border-bottom: 1px solid $white;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 100;
+    .log {
+        margin-top: 17px;
+        padding: 0 13px 16px 13px;
+    }
+    .menu {
+        margin-top: 16px;
+        padding: 0 13px 16px 13px;
+        i {
+            color: $white;
+        }
+    }
+}
+  
+.menuItem {
+    position: absolute;
+    margin-top: 65px;
+    text-align: center;
+    z-index: 100;
+    /*隱藏選單開始*/
+    max-height: 0px;
+    overflow: hidden;
+    /*隱藏選單結束*/
+    transition: max-height 2.3s;
+    li {
+        padding: 16px 140px;
+        text-decoration: none;
+        border-bottom: 1px solid $white;
+        background-color: rgba(0, 0, 0, 0.75);
+        a {
+            font-size: rem(20px);
+            color: $white;
+            text-decoration: none;
+        }
+    }
+}
+// jQ點擊後動態在 body 加上 class 要寫在 menuItem 覆蓋
+.menu-show .menuItem {
+    max-height: 500px;
+}
+
+.blockBotton {
+    position: absolute;
+    margin-top: 120px;
+    padding-bottom: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.35);
+    color: $white;
+    font-weight: lighter;
+    width: 300px;
+    left: 50%;
+    transform: translate(-50%);
+    h1 {
+        line-height: 1.5;
+        font-weight: 400;
+    }
+    .second{
+        display: none;
+    }
+    h3 {
+        font-weight: lighter;
+    } 
+}
+
+@include for-size(mobile-up) {
+    .blockTop{
+      border-bottom: none;
+    }
+    .showmenu {
+        display: none;
+    }
+    .menuItem{
+        display: flex;
+        transform: translateY(15px);
+        position: relative;
+        margin: 0;
+        overflow: visible;
+        li{
+            margin-right: 15px;
+            padding: 0;
+            border-bottom: 0;
+        }
+    }
+}
+
+@include for-size(pad-portrait-min) {
+     .blockTop {
+         border-bottom: none;
+     }
+    .showmenu {
+        display: none;
+    }
+    .menuItem {
+        display: flex;
+        transform: translateY(15px);
+        position: relative;
+        margin: 0;
+        overflow: visible;
+        li {
+            margin-right: 15px;
+            padding: 0;
+            border-bottom: 0;
+        }
+    }
+    .blockBotton{
+        width: 460px;
+        h1 {
+            display: none;
+        }
+        .second {
+            display: block;
+        }
+    }
+    .block {
+        background-image: url(https://hexschool.github.io/Rwd_sketch_export/assets/header_desktop.png);
+    }
+    
+}
+
+@include for-size(desktop-min){
+    .block {
+        background-image: url(https://hexschool.github.io/Rwd_sketch_export/assets/header_desktop@2x.png);
+        background-size: cover;
+    }
+}

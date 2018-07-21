@@ -1,0 +1,58 @@
+extends _layout.jade
+
+block index
+  #sidebar.clearfix.listMenu
+    .countainer
+      .list
+        .title <i class="fas fa-leaf"></i> 線上訂購美食
+        ul
+          li 全部(23)
+          li 只愛吃薯條(18)
+          li 加熱就可食(1)
+          li.hamburger 不敗漢堡系列(4)
+       
+  #content.searchItem
+   .countainer.clearfix
+    .searchBar
+        input(type="search", name="" id="search")
+        .searchIcon
+          a(href="")<i class="fas fa-search"></i>
+        ul.shop
+          li.shopping 結帳去
+          <i class="fas fa-shopping-cart fa-lg"></i>
+          li.boll 1
+    .cardItem
+      ul.clearfix
+        li.card
+          .heart<i class="far fa-heart fa-lg"></i>
+          img(src="https://github.com/Jimmywei01/HexSchool_Western_Restaurant-RWD/blob/master/src/images/product_1.png?raw=true", alt="none")
+          h3 經典漢堡套餐
+          p Classic Hamburger Package
+          hr
+          .money<i class="fas fa-dollar-sign"></i> 120
+          .addShopping<i class="fas fa-shopping-cart"></i> 加入購物車
+        li.card
+          .heart<i class="far fa-heart fa-lg"></i>
+          img(src="https://github.com/Jimmywei01/HexSchool_Western_Restaurant-RWD/blob/master/src/images/product_2.png?raw=true", alt="none")
+          h3 英俊香腸
+          p Handsome Sausage
+          hr
+          .money<i class="fas fa-dollar-sign"></i> 1,024
+          .addShopping<i class="fas fa-shopping-cart"></i> 加入購物車
+        li.card
+          .heart<i class="far fa-heart fa-lg"></i>
+          img(src="https://github.com/Jimmywei01/HexSchool_Western_Restaurant-RWD/blob/master/src/images/product_3.png?raw=true", alt="none")
+          h3 漢堡兄弟
+          p Hamburger Brothers
+          hr
+          .money<i class="fas fa-dollar-sign"></i> 792
+          .addShopping<i class="fas fa-shopping-cart"></i> 加入購物車
+        li.card
+          .heart<i class="fas fa-heart fa-lg"></i>
+          img(src="https://github.com/Jimmywei01/HexSchool_Western_Restaurant-RWD/blob/master/src/images/product_4.png?raw=true", alt="none")
+          h3 完美願望
+          p Dragon Ball Package
+          hr
+          .money<i class="fas fa-dollar-sign"></i> 999,999
+          .addShopping<i class="fas fa-shopping-cart"></i> 加入購物車
+
