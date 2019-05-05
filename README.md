@@ -1,35 +1,13 @@
+# 六角餐廳
+![](https://github.com/Jimmywei01/HexSchool_Western_Restaurant-RWD/blob/master/src/images/hum.png)
 
-## 作品網址:   https://jimmywei01.github.io/HexSchool_Western_Restaurant-RWD/index.html
+## Demo
+https://jimmywei01.github.io/HexSchool_Western_Restaurant-RWD/index.html
 
-## 使用技術: 
-### html preprocessor (pug、slim、haml)
-### CSS preprocessor (Sass、Less)
-### RWD (mobile first)
----
+### 主要練習
++ pug
++ Sass (mixins)
++ RWD (mobile first)
 
-### 如果您想將專案clone到本機端執行 直接clone專案，並透過命令列執行請依序執行以下指令來執行 gulp
-
-## 安裝環境
-### NPM 6.1.0
-### bower 1.8.4
-### gulp 3.9.1
----
-## step.1
-### npm install gulp -g
-### npm install bower -g
----
-## step.2 
-### 新增 .gitignore 檔案
-### .vscode
-### node_modules
-### public
-### bower_components
-### package-lock.json
-### .tmp
----
-## step.3
-### npm install
-### bower install
-### gulp bower
----
-
+## Statement
+本作品的文字內容及圖片，純為個人前端網頁技術練習，不做任何商業行為
